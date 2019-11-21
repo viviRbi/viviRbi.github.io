@@ -222,7 +222,7 @@ section{
 
 .work{
 	width: 50%;
-	height: 325px;
+	height: auto;
 	margin: 0;
 	padding: 0;
 	display: inline-block;
@@ -285,28 +285,38 @@ section{
 
 .link{
 	position: absolute;
-	bottom: 0;
-	left: 20px;
-	right: 20px;
-	display: flex;
-	justify-content: space-between;
+	bottom: 30%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
 	font-size: 20px;
 }
 
 .link .git, .link .live{
 	display: inline-block;
 	color: rgb(146,144,129);
+	padding: 0 50px;
 }
+
 .portfolio h3{
 	position: absolute;
-	top: 40%;
+	top: 50%;
 	left: 50%;
+	margin: 0 auto;
+	padding: 15px 0;
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	transform: translateX(-50%);
-	margin-top: -20%;
+	margin-top: -10%;
 	display: inline-block;
 	font-size: 40px;
 	color: rgb(108,97,91);
+}
+/* ################  Contact section ################*/
+
+#about .container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
