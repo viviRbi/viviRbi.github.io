@@ -1,3 +1,15 @@
+/*
+white letter rgb(224,227,227);    navbar rgb(224,227,227) 
+
+main  background rgba(222,229,217,255),   dark background  rgba(232,229,215,255)
+
+name title rgb(108,97,91);
+
+*/
+
+
+/*---------------share------------*/
+
 body{
 	margin: 0;
 	padding: 0;
@@ -5,21 +17,51 @@ body{
 	width: 100%;
 }
 
+.container{
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 80px 0;
+}
+
+.small-container{
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 10px 0;
+}
+
+p{
+	color: rgb(146,144,129);
+}
+.full-container{
+	padding: 30px 0; 
+}
+.full-wrapper{
+	padding: 40px 0 0 0;
+	position: relative;
+}
+
+.half-wrapper{
+	width: 50%;
+	display: inline-block;
+}
+
+/*------------nav---------------*/
 .container-nav{
-	background: lightgrey;
+	background: rgb(161,167,161);
 	padding: 0 15px;
 	margin: 0;
 	position: fixed;
 	top:0;
 	left:0;
 	right:0;
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	transition: all .5s;
+	-webkit-transition: all .8s;
+	-moz-transition: all .8s;
+	transition: all .8s;
 }
 /* when scrolled */
 .container-nav-white{
 	background: white !important;
+	z-index: 2;
 }
 
 nav{
@@ -35,7 +77,6 @@ nav{
 	color: grey;
 }
 
-
 #header-nav li{
 	display: inline-block;
 }
@@ -43,7 +84,11 @@ nav{
 	text-decoration: none;
 	padding: 0 10px;
 	text-transform: capitalize;
-	color: grey;
+	color: rgb(224,227,227);
+}
+
+#header-nav li a:hover{
+	color: rgb(108,97,91);
 }
 
 
@@ -53,3 +98,118 @@ nav{
 	-moz-transition: all .5s;
 	transition: all .5s;
 }
+
+section{
+	background: white;
+}
+
+/* ################  home section  ################*/
+
+#home{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background: none;
+}
+#home .none{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(rgba(222,229,217,255), rgba(232,229,215,255));
+	background: -webkit-linear-gradient(rgba(222,229,217,255), rgba(232,229,215,255));
+	background: -moz-linear-gradient(rgba(222,229,217,255), rgba(232,229,215,255));
+	display: table;
+	z-index: -2;
+}
+#home .intro-container{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	z-index: -2;
+}
+#home h1{
+	font-size: 3em;
+	color: rgb(108,97,91);
+	z-index: -2;
+}
+#home p{
+	color: rgb(146,144,129);
+	z-index: -2;
+}
+
+/* ################  about me section ################*/
+
+#about .container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.circle{
+	background: rgb(224,227,227);
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	display: table;
+}
+.circle div{
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	color: rgb(108,97,91);
+}
+.circle h1 .circle h4{
+	display: inline-block;
+}
+.circle h1{
+	position: relative;
+	right: 5px;
+}
+.circle h4{
+	position: relative;
+	left: 5px;
+	bottom: 4px;
+	line-height: 5px;
+	color: rgb(146,144,129);
+}
+
+/* ################  Skill section ################*/
+
+
+#skill .full-container{
+	background: linear-gradient(rgba(222,229,217,255), rgba(232,229,215,255));
+	background: -webkit-linear-gradient(rgba(222,229,217,255), rgba(232,229,215,255));
+	background: -moz-linear-gradient(rgba(222,229,217,255), rgba(232,229,215,255));
+
+}
+.line{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: rgb(108,97,91);
+	position: relative;
+	bottom: 10px;
+}
+.line h4{
+	margin: 0 0 30px 0;
+	padding: 0;
+	position: relative;
+	display: inline-block;
+	left: 10px;
+}
+
+#skill .small-container{
+	text-align: center;
+}
+#skill li{
+	text-align: center;
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+}
+
+#skill img{
+	height: auto;
+	width: 70px;
+}
+
+
