@@ -243,28 +243,21 @@ section{
 }
 
 #work .full-container .work .ecomerce{
-	background-image: url("../img/ecomerce.jpeg");
+	background-image: url("../img/ecomerce.jpeg") !important;
 }
 
 #work .full-container .work .estate{
-	background-image: url("../img/estate.jpeg");
+	background-image: url("../img/estate.jpeg") !important;
 }
 
 #work .full-container .work .restaurant{
-	background-image: url("../img/restaurant.jpeg");
+	background-image: url("../img/restaurant.jpeg") !important;
 }
 
 #work .full-container .work .agency{
-	background-image: url("../img/agency.jpeg");
+	background-image: url("../img/agency.jpeg") !important;
 }
 
-.portfolio img{
-	position: absolute;
-	width: 100%;
-	height: 325px;
-	left: 0;
-	top: 0;
-}
 .portfolio .overlay{
 	position: absolute;
 	top: 0;
