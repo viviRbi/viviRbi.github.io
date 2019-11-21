@@ -213,13 +213,11 @@ section{
 /* ################  Work section ################*/
 
 #work .full-container:nth-child(2){
-	display: flex;
-	flex-direction: column;
-}
-
-#work .full-container .row{
+	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .work{
@@ -244,28 +242,20 @@ section{
 	transition: all 0.8s;
 }
 
-#work .full-container .work .p-one{
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: url("https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+#work .full-container .work .ecomerce{
+	background-image: url("../img/ecomerce.jpeg");
 }
 
-#work .full-container .work .p-two{
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: url("https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+#work .full-container .work .estate{
+	background-image: url("../img/estate.jpeg");
 }
 
-#work .full-container .work .p-three{
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: url("https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+#work .full-container .work .restaurant{
+	background-image: url("../img/restaurant.jpeg");
 }
 
-#work .full-container .work .p-four{
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: url("https://images.unsplash.com/photo-1516910817563-4df1c1b69058?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+#work .full-container .work .agency{
+	background-image: url("../img/agency.jpeg");
 }
 
 .portfolio img{
@@ -285,7 +275,7 @@ section{
 	opacity: 0.8;
 	display: none;
 	-webkit-transition: all 0.8s ease;
-	-moz-transition: all 0.8s ease
+	-moz-transition: all 0.8s ease;
 	transition: all 0.8s ease;
 }
 
