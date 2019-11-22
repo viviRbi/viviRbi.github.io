@@ -240,6 +240,11 @@ section{
 	-webkit-transition: all 0.8s;
 	-moz-transition: all 0.8s;
 	transition: all 0.8s;
+	margin: 0;
+	padding: 0;
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	transform: scale(1.0);
 }
 
 #work .full-container .work .ecomerce{
@@ -266,21 +271,14 @@ section{
 	right: 0;
 	background: white;
 	opacity: 0.8;
-	display: none;
-	-webkit-transition: all 0.8s ease;
-	-moz-transition: all 0.8s ease;
-	transition: all 0.8s ease;
+	opacity: 0;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	transition: all 0.6s ease;
 }
 
-.work:hover .portfolio .overlay{
-	display: block;
-}
-
-.work:hover .work .p-one, .work .p-two, .work .p-three, .work .p-four{
-	display: inline-block;
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	transform: scale(1.1);
+.work:hover .overlay{
+	opacity: 0.8;
 }
 
 .link{
@@ -296,7 +294,23 @@ section{
 .link .git, .link .live{
 	display: inline-block;
 	color: rgb(146,144,129);
-	padding: 0 50px;
+	margin: 0 50px;
+	list-style: none;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.git:hover{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.live:hover{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .portfolio h3{
