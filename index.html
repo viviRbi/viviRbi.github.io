@@ -13,6 +13,9 @@
 
 	<!-- Main Style-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/5c2fb5233c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -139,8 +142,8 @@
 						<div class="portfolio ecomerce">
 							<div class="overlay">
 								<div class="link">
-									<a class="git" href="#">Git</a>
-									<a class="live" href="#">Live</a>
+									<a class="git" href="#work">Git</a>
+									<a class="live" href="#work">Live</a>
 								</div>
 								<h3 class="name">Ecomercial</h3>
 							</div>
@@ -151,8 +154,8 @@
 						<div class="portfolio estate">
 							<div class="overlay">
 								<div class="link">
-									<a class="git" href="#">Git</a>
-									<a class="live" href="#">Live</a>
+									<a class="git" href="#work">Git</a>
+									<a class="live" href="#work">Live</a>
 								</div>
 								<h3 class="name">Estate</h3>
 							</div>
@@ -167,8 +170,8 @@
 						<div class="portfolio restaurant">
 							<div class="overlay">
 								<div class="link">
-									<a class="git" href="#">Git</a>
-									<a class="live" href="#">Live</a>
+									<a class="git" href="#work">Git</a>
+									<a class="live" href="#work">Live</a>
 								</div>
 
 								<h3 class="name">Restaurant</h3>
@@ -180,8 +183,8 @@
 						<div class="portfolio agency">
 							<div class="overlay">
 								<div class="link">
-									<a class="git" href="#">Git</a>
-									<a class="live" href="#">Live</a>
+									<a class="git" href="#work">Git</a>
+									<a class="live" href="#work">Live</a>
 								</div>
 								<h3 class="name">Agency</h3>
 							</div>
@@ -209,37 +212,39 @@
 				</div>
 			</div>
 
-			<div class="half-wrapper">
-				<ul>
+			<div class="info-message">
+				<ul class= "info">
 					<li><i class="fa fa-mobile"></i><span>(832)535-5252</span></li>
-					<li><i class="fa fa-evelope"></i><span>thaovyletruong@protonmail.com</span></li>
-					<li><i class="fa fa-map-maker"><span></i>(832)535-5252</span></li>
+					<li><i class="fas fa-envelope"></i><span>thaovyletruong</span><br><span>@protonmail.com</span></li>
+					<li><i class="fas fa-map-marker-alt"><span></i>(832)535-5252</span></li>
 				</ul>
-			</div>
+			
 
-			<div class="half-wrapper">
-				<div class="contact">
+			
+				<div class="message">
 					<form>
+						<header>
+							<h3>Send Message</h3>
+						</header>
 
-						<div class="form-each">
-							<input type="text" id="name" placeholder="Your name">
-						</div>
+						
+							<input type="text" id="name" class="form-same" placeholder="Your name">
+						
+						
+							<input type="email" id="email" class="form-same" placeholder="Email Address">
+					
+						
+							<input type="text" id="phone" class="form-same" placeholder="Phone Number">
+					
+						
+							<input type="text" id="subject" class="form-same" placeholder="Subject">
+					
 
-						<div class="form-each">
-							<input type="email" id="email" placeholder="Email Address">
-						</div>
+		
+						<textarea class="form-message" placeholder="Message"></textarea>
+					
 
-						<div class="form-each">
-							<input type="text" id="phone" placeholder="Phone Number">
-						</div>
-
-						<div class="form-each">
-							<input type="text" id="subject" placeholder="Subject">
-						</div>
-
-						<div class="form-each">
-							<input type="text" id="message" placeholder="Message">
-						</div>
+						<button class="submit">SUBMIT</button>
 
 					</form>
 				</div>
@@ -247,6 +252,10 @@
 
 		</div>
 	</section>
+
+	<footer>
+		<h6>Made with Html, Css and Javascript</h6>
+	</footer>
 	<!-- Main Script-->
 	<script type="text/javascript" src="script/script.js"></script>
 </body>
