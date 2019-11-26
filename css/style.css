@@ -234,7 +234,7 @@ section{
 	overflow: hidden;
 }
 
-@media (max-width: 520px){ /* turn 2 col each row to one for portfolio */
+@media (max-width: 768px){ /* turn 2 col each row to one for portfolio */
 
 	#work .flex-container{
 		height: 200vh;  /* height of all items */
@@ -315,7 +315,7 @@ section{
 }
 .link{
 	position: absolute;
-	bottom: 30%;
+	bottom: 25%;
 	left: 50%;
 	margin: auto;
 	-webkit-transform: translateX(-50%);
@@ -334,26 +334,33 @@ section{
 	padding: 5px;
 	list-style: none;
 	text-decoration: none;
+	font-size: 30px;
+	text-align: center;
+}
+.git i, .live i{
 	-webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
 	transition: all 0.4s;
 }
-
-.git:hover{
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	transform: scale(1.1);
+.git span, .live span{
+	font-size: 14px;
+	display: inline-block;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
 }
-
-.live:hover{
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	transform: scale(1.1);
+.git:hover i, .live:hover i{
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.git:hover span, .live:hover span{
+	font-size: 12px;
 }
 
 .portfolio h3{
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	margin: 0 auto;
 	padding: 15px 0;
