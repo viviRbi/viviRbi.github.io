@@ -216,7 +216,7 @@ section{
 	flex-wrap: wrap;
 	height: 80vh;
 	width: 100vw;
-	margin: 30px 0;
+	margin: 30px 0 0 0;
 
 }
 #work .flex-container .row{
@@ -326,7 +326,19 @@ section{
 	font-size: 20px;
 	justify-content: space-around;
 }
-
+@media(max-width: 1100px){
+	.link{
+		bottom: 15%;
+	}
+}
+@media(max-width: 768px){
+	.link{
+		bottom: 25%;
+	}
+	.git i, .live i{
+	font-size: 50px;
+	}
+}
 .link .git, .link .live{
 	flex: 1;
 	color: rgb(146,144,129);
@@ -338,6 +350,7 @@ section{
 	text-align: center;
 }
 .git i, .live i{
+	font-size: 30px;
 	-webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
 	transition: all 0.4s;
@@ -350,9 +363,9 @@ section{
 	transition: all 0.4s;
 }
 .git:hover i, .live:hover i{
-	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-	transform: scale(1.2);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	transform: scale(1.1);
 }
 .git:hover span, .live:hover span{
 	font-size: 12px;
@@ -375,10 +388,12 @@ section{
 
 /* ################  Contact section ################*/
 #contact{
-	background: linear-gradient(white, rgb(232,239,235));
-	background: -webkit-linear-gradient(white, rgb(232,239,235));
-	background: -moz-linear-gradient(white, rgb(232,239,235));
-	padding: 50px 0 100px 0;
+	background-color: white;
+	background-image: linear-gradient(to bottom, white 50%, rgb(224,227,227) 50%);
+	background-image: -webkit-linear-gradient(to bottom, white 50%, rgb(224,227,227) 50%);
+	background-image: -moz-linear-gradient(to bottom, white 50%, rgb(224,227,227) 50%);
+	padding: 90px 0 100px 0;
+	margin-top: -50px;
 }
 
 #contact .container{
@@ -391,12 +406,21 @@ section{
 	width: 100%;
 	flex-direction: row;
 	margin-top: 30px;
-	margin-bottom: 60px;
+	margin-bottom: 0;
 	align-items: center;
+}
+@media (max-width: 768px){
+	.info-message{
+		flex-direction: column;
+	}
 }
 .info, .message{
 	flex:1;
 	color: var(--letterDark);
+}
+.info{
+	background-position: 50%;
+	margin: : 0 10%;
 }
 .info li span{
 	margin-left: 30px;
@@ -413,6 +437,10 @@ section{
 	-webkit-transform: translateX(-15%);
 	-moz-transform: translateX(-15%);
 }
+/*#contact .back{
+	background: var(--lightGrey);
+	height: 40vh;
+}*/
 
 /*------------------------------ form -------------------*/
 .message{
@@ -442,6 +470,7 @@ form{
 	padding: 0;
 	border-radius: 10px;
 	text-indent: 10px;
+	border: 1px solid var(--lightGrey);;
 }
 .form-message{
 	margin: 10px 10px;
@@ -451,6 +480,7 @@ form{
 	border-radius: 10px;
 	text-indent: 10px;
 	border-color: var(--lightGrey);
+	line-height: 16px;
 }
 #contact button{
 	width: 70px;
@@ -460,14 +490,33 @@ form{
 	transform: translateX(-35px);
 	margin: 5px 10px;
 	border-radius: 10px;
-	color: var(--lightGrey);
 	background: rgb(161,167,161);
+}
+#contact a{
+	color: var(--lightGrey);
+	text-decoration: none;
+}
+#contact button, #contact a{
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+#contact button:hover{
+	background: var(--lightGrey);
+}
+#contact button:hover a{
+	color: var(--letterDark);
+	opacity: 0.5;
 }
 .form-same:focus, .form-message:focus, button:focus{
 	outline: none;
 	opacity: 0.5;
 }
+/*---------------------------------------- background ---------------------------------------*/
+
+
 /*---------------------------------------- Footer. ---------------------------------------*/
+
 footer{
 	text-align: center;
 	background: rgb(161,167,161);
@@ -480,6 +529,7 @@ footer{
 footer h6{
 	padding: 0;
 	margin:0;
+	font-weight: 100;
 }
 
 
