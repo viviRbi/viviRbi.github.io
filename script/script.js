@@ -124,6 +124,7 @@ function popUpDis(i) {
 const submitBtn = document.querySelector('#submit')
 const thanksPar = document.querySelector('#thanks')
 const inputs = document.querySelectorAll('input')
+const submit = false
 
 if (document.querySelector('#thanks').classList.contains("visible")) {
 	thanksPar.classList.remove("visible")
@@ -133,9 +134,13 @@ submitBtn.addEventListener('click', function () {
 	for (let i = 0; i < inputs.length; i++) {
 		if (!inputs[i].validity.valid) {
 			e.preventDefault()
+			submit = false
 			return
 		}
-		thanksPar.classList.add("visible")
-		location.reload()
+		submit = true
+		if (submit) {
+			thanksPar.classList.add("visible")
+			location.reload()
+		}
 	}
 })
