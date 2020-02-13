@@ -117,3 +117,8 @@ function popUpDis(i) {
 		popUpDis(i)
 	})
 }
+
+document.getElementById('submit').addEventListener('onclick', function () {
+	submitted = true
+	return true
+})

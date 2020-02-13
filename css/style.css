@@ -350,19 +350,19 @@ section{
 .left{
 	width: 0;
 	height:0;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	border-left: 10px solid transparent;
-	border-right: 15px solid var(--letterDark);
+	border-top: 2vmin solid transparent;
+	border-bottom: 2vmin solid transparent;
+	border-left: 2vmin solid transparent;
+	border-right: 2vmin solid var(--letterDark);
 }
 .right{
 		width: 0;
 		height:0;
-		border-top: 10px solid transparent;
-		border-bottom: 10px solid transparent;
-		border-right: 10px solid transparent;
-		border-left: 15px solid var(--letterDark);
-		margin-left: 15px;
+		border-top: 2vmin solid transparent;
+		border-bottom: 2vmin solid transparent;
+		border-right: 2vmin solid transparent;
+		border-left: 2vmin solid var(--letterDark);
+		margin-left: 3vmin;
 }
 .project-button .next{
 	position: absolute;

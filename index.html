@@ -217,19 +217,25 @@
 				</ul>
 
 				<div class="message">
-					<form>
+					<!--Update the URL for thank you page on form submit -->
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+						onload="if(submitted) {window.location='http\:\/\/zerobudget.club\/';}"></iframe>
+					<form
+						action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScPJKZh-IUGaFibA3IofW4q-_9ie9_2_jua_qgA_gcS5IAV4A/formResponse"
+						method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
 						<header>
 							<h3>Send Message</h3>
 						</header>
 
-						<input type="text" id="name" class="form-same" placeholder="Your name">
-						<input type="email" id="email" class="form-same" placeholder="Email Address">
-						<input type="text" id="phone" class="form-same" placeholder="Phone Number">
-						<input type="text" id="subject" class="form-same" placeholder="Subject">
+						<input type="text" id="name" class="form-same" placeholder="Your name" required name="entry.2039403875">
+						<input type="email" id="email" class="form-same" placeholder="Email Address" required
+							name="entry.289962692">
+						<input type="text" class="form-same" placeholder="Phone Number" id="phone" required name="entry.425492239">
+						<input type="text" id="subject" class="form-same" placeholder="Subject" required name="entry.1512212410">
+						<textarea class="form-message" placeholder="Message" id="message" required
+							name="entry.1408663050"></textarea>
 
-						<textarea class="form-message" placeholder="Message"></textarea>
-
-						<button class="submit"><a href="#contact">SUBMIT</a></button>
+						<button id="submit" class="submit"><a href="#contact" type="submit">SUBMIT</a></button>
 					</form>
 				</div>
 			</div>
