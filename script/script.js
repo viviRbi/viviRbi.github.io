@@ -133,6 +133,7 @@ submitBtn.addEventListener('click', function () {
 	for (let i = 0; i < inputs.length; i++) {
 		if (!inputs[i].validity.valid) {
 			e.preventDefault()
+			return
 		}
 		thanksPar.classList.add("visible")
 		location.reload()
