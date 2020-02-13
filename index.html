@@ -219,10 +219,8 @@
 				<div class="message">
 					<!--Update the URL for thank you page on form submit -->
 					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-						onload="if(submitted) {window.location='http\:\/\/zerobudget.club\/';}"></iframe>
-					<form
-						action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScPJKZh-IUGaFibA3IofW4q-_9ie9_2_jua_qgA_gcS5IAV4A/formResponse"
-						method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+						onload="if(submitted) {window.location='#home'}"></iframe>
+					<form target="_self" method="POST" id="mG61Hd" onsubmit="return validateForm(); ">
 						<header>
 							<h3>Send Message</h3>
 						</header>
@@ -235,7 +233,7 @@
 						<textarea class="form-message" placeholder="Message" id="message" required
 							name="entry.1408663050"></textarea>
 
-						<button id="submit" class="submit"><a href="#contact" type="submit">SUBMIT</a></button>
+						<button id="submit" class="submit"><a type="submit">SUBMIT</a></button>
 					</form>
 				</div>
 			</div>
