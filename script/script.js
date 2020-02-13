@@ -140,7 +140,7 @@ submitBtn.addEventListener('click', function () {
 		submit = true
 		if (submit) {
 			thanksPar.classList.add("visible")
-			// window.setTimeout(location.reload())
+			window.setTimeout(document.location = "https://vivirbi.github.io./", 700)
 		}
 	}
 })
