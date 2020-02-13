@@ -121,11 +121,20 @@ function popUpDis(i) {
 /*---------------------
      Form
 ----------------------*/
+const submitBtn = document.querySelector('#submit')
+const thanksPar = document.querySelector('#thanks')
 
 let submited = false
 
-document.querySelector('#submit').addEventListener('click', function () {
-	submited = true
-	setTimeout(function () { submited = false; location.reload() }, 500);
+if (!submited && document.querySelector('#thanks').classList.contains("visible")) {
+	thanksPar.classList.remove("visible")
+}
 
+submitBtn.addEventListener('click', function (e) {
+	e.preventDefault()
+	thanksPar.classList.add("visible")
+	submited = true
+	setTimeout(function () {
+		submited = false; location.reload()
+	}, 1000);
 })
