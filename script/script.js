@@ -118,3 +118,14 @@ function popUpDis(i) {
 	})
 }
 
+/*---------------------
+     Form
+----------------------*/
+
+let submited = false
+
+document.querySelector('#submit').addEventListener('click', function () {
+	submited = true
+	setTimeout(function () { submited = false; location.reload() }, 500);
+
+})
