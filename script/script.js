@@ -123,18 +123,18 @@ function popUpDis(i) {
 ----------------------*/
 const submitBtn = document.querySelector('#submit')
 const thanksPar = document.querySelector('#thanks')
+const inputs = document.querySelectorAll('input')
 
-let submited = false
-
-if (!submited && document.querySelector('#thanks').classList.contains("visible")) {
+if (document.querySelector('#thanks').classList.contains("visible")) {
 	thanksPar.classList.remove("visible")
 }
 
-submitBtn.addEventListener('click', function (e) {
-	e.preventDefault()
-	thanksPar.classList.add("visible")
-	submited = true
-	setTimeout(function () {
-		submited = false; location.reload()
-	}, 1000);
+submitBtn.addEventListener('click', function () {
+	for (let i = 0; i < inputs.length; i++) {
+		if (!inputs[i].validity.valid) {
+			e.preventDefault()
+		}
+		thanksPar.classList.add("visible")
+		location.reload()
+	}
 })
