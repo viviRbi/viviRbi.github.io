@@ -140,7 +140,7 @@ submitBtn.addEventListener('click', function () {
 		submit = true
 		if (submit) {
 			thanksPar.classList.add("visible")
-			location.reload()
+			// window.setTimeout(location.reload())
 		}
 	}
 })
