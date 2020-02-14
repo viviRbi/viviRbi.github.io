@@ -28,7 +28,9 @@ body{
 	margin-right: 10%;
 	padding: 10px 0;
 }
-
+a{
+	text-decoration: none;
+}
 p{
 	color: var(--letterDark);
 }
@@ -235,17 +237,6 @@ section{
 	height: 30vw;
 	display: inline-block;
 }
-@media screen and (max-width: 720px){
-	#work .work{
-		display: block;
-		width: 100vw;
-		height: 80vw;
-	}
-	.work .name{
-		padding-top: 20%;
-		font-size: 10vmin !important;
-	}
-}
 .work .name{
 	margin-top: 18vmin;
 	font-weight: 300;
@@ -253,7 +244,7 @@ section{
 	color: var(--letterDarkest);
 	cursor: pointer;
 }
-.work .name:hover{
+.work .pic:hover .name{
 	color: var(--letterDark);
 	transform: scale(1.05);
 	-webkit-transform: scale(1.05);
@@ -261,31 +252,6 @@ section{
 }
 .work .view-more{
 	font-size: 3vmin;
-}
-.link{
-	position: absolute;
-	bottom: 10vmin;
-	left: 0;
-	width: 100%;
-	text-align: left;
-}
-.link .git{
-	position: absolute;
-	text-align: center;
-	color: var(--letterDark);
-	left: 10vmin;
-}
-.link .live{
-	position: absolute;
-	right: 10vmin;
-	text-align: center;
-	color: var(--letterDark);
-}
-.link .git:hover, .link .live:hover{
-	color: var(--letterDarkest);
-	transform: scale(1.05);
-	-webkit-transform: scale(1.05);
-	-moz-transform: scale(1.05);
 }
 .pic{
 	background-size: contain;
@@ -295,6 +261,7 @@ section{
 	height: 100%;
 	display: inline-block;
 	position: relative; 
+	cursor: pointer;
 }
 
 .work .overlay{
@@ -309,9 +276,39 @@ section{
 .work:hover .overlay{
 	opacity: 0.8;
 }
-
-
-/* ################  Pop up project detail ################*/
+/* ------------------ Ui/UX project -----------*/
+#ui{
+text-align: center;
+height: 40vmin;
+background: linear-gradient(rgb(213, 235, 211), rgb(223, 221, 211));
+background: -webkit-linear-gradient(rgb(213, 235, 211), rgb(223, 221, 211));
+background: -moz-linear-gradient(rgb(213, 235, 211), rgb(223, 221, 211));
+background-attachment: fixed;
+}
+.ui-pro{
+	display: inline-block;
+	width: 30vmin;
+	height: 25vmin;
+	margin: 2vmin;
+	background-size: cover;
+	background-position-x: center;
+}
+.ui-pro:hover{
+	opacity: 0.5;
+}
+.one{
+	background-image: url("../img/project/yokai_pet.jpg")!important;
+}
+.two{
+	background-image: url("../img/project/tessa_mock.jpg")!important;
+}
+.three{
+	background-image: url("../img/project/port_mock.jpg")!important;
+}
+.four{
+	background-image: url("../img/project/greatread_mock.jpg")!important;
+}
+/* ------------  Pop up project detail ----------*/
 .pop-up-overlay{
 	position: fixed;
 	top:0;
@@ -372,32 +369,8 @@ section{
 	bottom: 2vmin;
 	right: 5vw;
 }
-@media screen and (max-width: 720px){
-	.pop-up-overlay{
-		overflow-y: scroll;
-	}
-	.pop-up{
-		margin: 10vh auto!important;
-	}
-	.pop-up-content{
-		display: block!important;
-		text-align: center!important;
-	}
-	.pop-up .img-holder{
-		margin: 2vmin auto!important;
-		width: 60%!important;
-		height: 40vw!important;
-	}
-	.pop-up .detail{
-		text-align: justify!important;
-		margin:0!important;
-	}
-	.pop-up .detail h1{
-		text-align: center;
-	}
-}
 .pop-up{
-	margin: 10vh 5vw;
+	margin: 5vh 5vw;
 }
 .pop-up .title{
 	font-size: 5vmin;
@@ -407,54 +380,68 @@ section{
 	width: 100%;
 	height: 100%;
 	display: flex;
+	margin-top: -2vh;
 }
 .pop-up .img-holder{
 	width: 40vw;
 	height: 30vw;
 	display: inline-block;
-	background: black;
+	background: none;
 	margin:2vmin;
 }
-.pop-up .detail{
+.pro-img{
+	width: 100%;
+	height: 80%;
+	background-size: cover;
+}
+.detail{
 	width: 58vw;
 	display: inline-block;
 	margin-left: 5vmin;
 	padding:0;
 	text-align: left;
 }
-.pop-up .detail-back{
-	width: 20%;
+.detail-back{
+	width: 60%;
 	display: inline-block;
 	position: relative;
 	background: rgb(108,97,91);
-	margin-right: 30%;
+	margin: auto;
 }
-.pop-up .back{
+.detail-back .back{
 	position: absolute;
 	left:0;
+	width: 10%;
 	color: grey;
 	cursor: pointer;
 	border-radius: 10px;
 	border: 1px solid grey;
 	padding: 0.3vmin 0.8vmin;
 }
-.pop-up .back:hover{
+.back:hover{
 	color: var(--lightGrey);
 	border: 1px solid white;
 	background: var(--letterDark);
 }
 .pop-up .detail-link{
 	width: 40%;
+	height: 10%;
 	position: relative;
 	display: inline-block;
 	background: rgb(108,97,91);
 	font-size: 3vmin;
 	cursor: pointer;
+	padding:0;
+	margin-bottom: 5%;
 }
 .pop-up .detail-link a{
-	padding: 0.3vmin 0.8vmin;
+	padding: 0.5vmin 1vmin;
+	border-radius: 10px;
 	color: var(--letterDarkest);
 	position: absolute;
+	text-decoration: none;
+	width: 7vmin;
+	height: 3vmin;
 }
 .pop-up .detail-link a:first-child{
 	left:0;
@@ -463,10 +450,8 @@ section{
 	right:0;
 }
 .pop-up .detail-link a:hover{
-	color: var(--letterDark);
-	transform: scale(1.05);
-	-webkit-transform: scale(1.05);
-	-moz-transform: scale(1.05);
+	color: white;
+	background: rgb(192, 190, 176);
 }
 /* ################  Contact section ################*/
 #contact{

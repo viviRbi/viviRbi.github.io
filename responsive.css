@@ -1,0 +1,38 @@
+@media screen and (max-width: 720px){
+	#work .work{
+		display: block;
+		width: 100vw;
+		height: 80vw;
+	}
+	.work .name{
+		padding-top: 20%;
+		font-size: 10vmin !important;
+  }
+  .pop-up-overlay{
+		overflow-y: scroll;
+	}
+	.pop-up{
+		margin: 10vh auto!important;
+	}
+	.pop-up-content{
+		display: block!important;
+		text-align: center!important;
+	}
+	.pop-up .img-holder{
+		margin: 2vmin auto!important;
+		width: 60%!important;
+		height: 40vw!important;
+	}
+	.pop-up .detail{
+		text-align: justify!important;
+		margin:0!important;
+	}
+	.pop-up .detail h1{
+		text-align: center;
+  }
+}
+@media screen and (max-width:857px) and (min-height:480px){
+  #ui{
+    height: 80vmin!important;
+  }
+}
