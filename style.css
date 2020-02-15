@@ -15,6 +15,8 @@ body{
 	padding: 0;
 	height: 100vh;
 	width: 100vw;
+	display: table;
+  width: 100%; 
 }
 
 .container{
@@ -233,14 +235,14 @@ section{
 #work .work{
 	margin:2vmin;
 	padding:0;
-	width:45vw;
-	height: 30vw;
+	width:43vw;
+	height: 23vw;
 	display: inline-block;
 }
 .work .name{
-	margin-top: 18vmin;
+	margin-top: 15vmin;
 	font-weight: 300;
-	font-size: 6vmin;
+	font-size: 7vmin;
 	color: var(--letterDarkest);
 	cursor: pointer;
 }
@@ -262,6 +264,8 @@ section{
 	display: inline-block;
 	position: relative; 
 	cursor: pointer;
+	box-shadow: 0 0 20px rgba(161,167,161,0.5);
+	border-radius: 5px;
 }
 
 .work .overlay{
@@ -277,21 +281,26 @@ section{
 	opacity: 0.8;
 }
 /* ------------------ Ui/UX project -----------*/
+.ui{
+	margin: 10vmin auto auto auto;
+}
 #ui{
 text-align: center;
 height: 40vmin;
-background: linear-gradient(rgb(213, 235, 211), rgb(223, 221, 211));
-background: -webkit-linear-gradient(rgb(213, 235, 211), rgb(223, 221, 211));
-background: -moz-linear-gradient(rgb(213, 235, 211), rgb(223, 221, 211));
+background: linear-gradient(rgba(196, 231, 219, 0.5), rgba(223, 221, 211, 0.3));
+background: -webkit-linear-gradient(rgba(196, 231, 219, 0.5), rgba(223, 221, 211, 0.3));
+background: -moz-linear-gradient(rgba(196, 231, 219, 0.5), rgba(223, 221, 211, 0.3));
 background-attachment: fixed;
 }
 .ui-pro{
 	display: inline-block;
 	width: 30vmin;
 	height: 25vmin;
-	margin: 2vmin;
+	margin: 3vmin 2vmin auto 2vmin;
+	line-height: 40vmin;
 	background-size: cover;
 	background-position-x: center;
+	border-radius: 5px;
 }
 .ui-pro:hover{
 	opacity: 0.5;
@@ -383,8 +392,8 @@ background-attachment: fixed;
 	margin-top: -2vh;
 }
 .pop-up .img-holder{
-	width: 40vw;
-	height: 30vw;
+	width: 34vw;
+	height: 20vw;
 	display: inline-block;
 	background: none;
 	margin:2vmin;
@@ -392,7 +401,12 @@ background-attachment: fixed;
 .pro-img{
 	width: 100%;
 	height: 80%;
-	background-size: cover;
+	background-size: contain;
+	background-position-x: center;
+	background-position-y: top;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	box-shadow: -2px 0 20px rgba(161,167,161,0.5);
 }
 .detail{
 	width: 58vw;
@@ -591,18 +605,24 @@ form{
 /*---------------------------------------- Footer. ---------------------------------------*/
 
 footer{
+	display: table-row;
 	text-align: center;
 	background: rgb(161,167,161);
 	color: white;
 	padding: 10px 0;
 	margin:0;
 	bottom: 0;
+	left:0;
+	right:0;
+	height: 5vmin;
 	opacity: 0.7;
 }
 footer h6{
 	padding: 0;
 	margin:0;
 	font-weight: 100;
+	font-size: 2vmin;
+	line-height: 5vmin;
 }
 
 

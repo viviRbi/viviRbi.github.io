@@ -34,5 +34,8 @@
 @media screen and (max-width:857px) and (min-height:480px){
   #ui{
     height: 80vmin!important;
-  }
+	}
+	.ui-pro{
+		margin-top: 7vmin!important;
+	}
 }
