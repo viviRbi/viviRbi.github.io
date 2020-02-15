@@ -29,7 +29,38 @@
 	}
 	.pop-up .detail h1{
 		text-align: center;
-  }
+	}
+	.info-message{
+		flex-direction:column!important;
+		height: 70vh!important;
+	}
+	.info, .message{
+		display: block;
+		z-index: 1;
+	}
+	.message{
+		width:80%!important;
+		margin-top: 20vh;
+	}
+	.info{
+		display: table;
+		width: 80%;
+		text-align: justify;
+	}
+	.info li{
+		display: table-cell;
+		margin: 5vmin;
+		padding: 0;
+		line-height: 4vmin!important;
+		vertical-align: middle;
+	}
+	.phone-place{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.phone-place li{
+		display: table-row;
+	}
 }
 @media screen and (max-width:857px) and (min-height:480px){
   #ui{
