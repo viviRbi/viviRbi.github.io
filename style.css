@@ -15,7 +15,6 @@ body{
 	padding: 0;
 	height: 100vh;
 	width: 100vw;
-	display: table;
   width: 100%; 
 }
 
@@ -341,6 +340,8 @@ background-attachment: fixed;
 	outline: none;
 	border-radius: 10px;
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
 }
 .project-button button:hover{
 	background: var(--letterDark);
@@ -356,6 +357,11 @@ background-attachment: fixed;
 	bottom: 2vmin;
 	left: 5vw;
 }
+.project-button .next{
+	position: absolute;
+	bottom: 2vmin;
+	right: 5vw;
+}
 .left{
 	width: 0;
 	height:0;
@@ -363,6 +369,7 @@ background-attachment: fixed;
 	border-bottom: 2vmin solid transparent;
 	border-left: 2vmin solid transparent;
 	border-right: 2vmin solid var(--letterDark);
+	margin-right: 2vmin;
 }
 .right{
 		width: 0;
@@ -371,12 +378,7 @@ background-attachment: fixed;
 		border-bottom: 2vmin solid transparent;
 		border-right: 2vmin solid transparent;
 		border-left: 2vmin solid var(--letterDark);
-		margin-left: 3vmin;
-}
-.project-button .next{
-	position: absolute;
-	bottom: 2vmin;
-	right: 5vw;
+		margin-left: 2vmin;
 }
 .pop-up{
 	margin: 5vh 5vw;
@@ -599,13 +601,9 @@ form{
 	grid-column: 1/ span 2;
 	opacity: 0;
 }
-/*---------------------------------------- background ---------------------------------------*/
-
-
 /*---------------------------------------- Footer. ---------------------------------------*/
 
 footer{
-	display: table-row;
 	text-align: center;
 	background: rgb(161,167,161);
 	color: white;

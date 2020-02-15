@@ -17,6 +17,7 @@
 	.pop-up-content{
 		display: block!important;
 		text-align: center!important;
+		margin-top: 7vmin!important;
 	}
 	.pop-up .img-holder{
 		margin: 2vmin auto!important;
