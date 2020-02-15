@@ -1,3 +1,35 @@
+/* landscape mode */
+@media screen and (orientation:landscape){
+	#work .work .name{
+		font-size: 11vmin;
+		margin-top: 25vmin;
+	}
+	.view-more{
+		font-size: 2vmin;
+	}
+	.pop-up-overlay{
+		overflow-y: scroll;
+	}
+}
+@media screen and (orientation:landscape) and (max-height:640px){
+	#work .work .name{
+		font-size: 7vmin;
+		margin-top: 15vmin;
+	}
+	.view-more{
+		font-size: 2vmin;
+	}
+}
+@media screen and (orientation:landscape) and (max-height:460px){
+	#work .work .name{
+		font-size: 15vmin;
+		margin-top: 25vmin;
+	}
+	.view-more{
+		font-size: 2vmin;
+	}
+}
+/* general and portrait mode */
 @media screen and (max-width: 1000px){
 	#work .work .name{
 		font-size: 6vmin;
@@ -27,6 +59,7 @@
 	.work .name{
 		padding-top: 10%!important;
 		font-size: 10vmin!important;
+		margin-top: 10vmin!important;
 	}
 	.view-more{
 		font-size: 3vmin!important;
