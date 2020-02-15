@@ -234,12 +234,12 @@ section{
 #work .work{
 	margin:2vmin;
 	padding:0;
-	width:43vw;
+	width:40vw;
 	height: 23vw;
 	display: inline-block;
 }
 .work .name{
-	margin-top: 15vmin;
+	margin-top: 12vmin;
 	font-weight: 300;
 	font-size: 7vmin;
 	color: var(--letterDarkest);
