@@ -22,7 +22,8 @@
 		font-size: 2vmin;
 	}
 }
-/* general and portrait mode */
+
+/* general */
 @media screen and (max-width: 1000px){
 	#work .work .name{
 		font-size: 6vmin;
@@ -110,6 +111,13 @@
 	}
 	.phone-place li{
 		display: table-row;
+	}
+}
+
+/* Portrait */
+@media screen and (orientation: portrait) and (max-width: 1024px){
+	#ui{
+		height: 70vmin!important;
 	}
 }
 @media screen and (orientation: portrait) and (max-width:480px){
