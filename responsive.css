@@ -115,7 +115,7 @@
 }
 
 /* Portrait */
-@media screen and (orientation: portrait) and (max-width: 1024px){
+@media screen and (orientation: portrait) and (max-width: 1024px) and (max-height:1366px){
 	#ui{
 		height: 70vmin!important;
 	}
