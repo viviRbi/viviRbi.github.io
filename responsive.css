@@ -1,12 +1,5 @@
 /* landscape mode */
 @media screen and (orientation:landscape){
-	#work .work .name{
-		font-size: 11vmin;
-		margin-top: 25vmin;
-	}
-	.view-more{
-		font-size: 2vmin;
-	}
 	.pop-up-overlay{
 		overflow-y: scroll;
 	}
