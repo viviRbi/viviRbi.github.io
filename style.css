@@ -79,6 +79,9 @@ p{
 .container-nav-white #logo a{
 	color: var(--letterDarkest);
 }
+.container-nav-white li a{
+	color: rgb(182, 192, 181)!important;
+}
 nav{
 	display: flex;
 	flex-wrap: nowrap;

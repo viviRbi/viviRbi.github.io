@@ -116,6 +116,9 @@
 	body{
 		overflow-x: hidden;
 	}
+	#header-nav li a{
+		padding:1vmin!important;
+	}
 	.detail-back{
 		width:100%!important;
 		margin-left: 20vmin!important;
@@ -142,6 +145,13 @@
 		transform: translateX(0)!important;
 		-webkit-transform: translateX(0)!important;
 		-moz-transform: translateX(0)!important;
+	}
+}
+@media screen and (orientation: portrait) and (max-width:370px){
+	#header-nav li a{
+		margin: auto 1vmin!important;
+		padding:0!important;
+		font-size: 4vmin!important;
 	}
 }
 @media screen and (max-width:890px) and (min-height:480px){
