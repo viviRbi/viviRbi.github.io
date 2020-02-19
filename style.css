@@ -80,7 +80,7 @@ p{
 	color: var(--letterDarkest);
 }
 .container-nav-white li a{
-	color: rgb(182, 192, 181)!important;
+	color: var(--letterDark)!important;
 }
 nav{
 	display: flex;
