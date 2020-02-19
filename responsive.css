@@ -119,6 +119,9 @@
 	#header-nav li a{
 		padding:1vmin!important;
 	}
+	.info li span{
+		margin-left: 0!important;
+	}
 	.detail-back{
 		width:100%!important;
 		margin-left: 20vmin!important;
