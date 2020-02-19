@@ -112,6 +112,38 @@
 		display: table-row;
 	}
 }
+@media screen and (orientation: portrait) and (max-width:480px){
+	body{
+		overflow-x: hidden;
+	}
+	.detail-back{
+		width:100%!important;
+		margin-left: 20vmin!important;
+		height: 8vmin;
+		margin-top: 1vmin!important;
+		background: none!important;
+	}
+	form{
+		display: block!important;
+		padding-top: 5vmin;
+	}
+	form header{
+		tex
+	}
+	form header, form input, form textarea{
+		width: 80%;
+	}
+	form header, form input{
+		height: 15%;
+	}
+	form button{
+		display: block;
+		margin: auto!important;
+		transform: translateX(0)!important;
+		-webkit-transform: translateX(0)!important;
+		-moz-transform: translateX(0)!important;
+	}
+}
 @media screen and (max-width:890px) and (min-height:480px){
   #ui{
     height: 80vmin!important;
