@@ -563,6 +563,8 @@ form{
 	text-indent: 10px;
 	border-color: var(--lightGrey);
 	line-height: 16px;
+	min-width: 90%;
+	resize: none;
 }
 #contact button{
 	width: 70px;
