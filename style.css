@@ -79,7 +79,7 @@ p{
 .container-nav-white #logo a{
 	color: var(--letterDarkest);
 }
-.container-nav-white li a{
+.container-nav-white .header-nav li a{
 	color: var(--letterDark)!important;
 }
 nav{
