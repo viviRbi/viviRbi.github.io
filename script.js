@@ -58,7 +58,8 @@ const greatreads = {
 /*---------------------
      Projects Display
 ----------------------*/
-const projects = [tessa, detective]
+// const projects = [tessa, greatreads, detective]
+const projects = [detective]
 const titleHolder = document.querySelectorAll('#work .work .pic')
 const popUp = document.querySelector('#pop-up')
 
